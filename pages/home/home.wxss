@@ -27,6 +27,36 @@
   bottom: 0
 }
 
+.float-view {
+  position: absolute;
+  z-index: 101;
+  left: 0;
+  top:120rpx;
+}
+
+.float-view-wrapper {
+    position: relative;
+    width: 190rpx;
+    height: 146rpx;
+}
+
+.float-iamge {
+  width: 190rpx;
+  height: 146rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.nav-view {
+  width: 190rpx;
+  height: 146rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
 .input-view {
   display: flex;
   flex-direction: column;

@@ -6,8 +6,13 @@
     <view class='result-view'>
        <image class='result-image' src='{{img_url}}' bindtap='imgShow' mode='widthFix'></image>
        <view class='btn-view'>
-          <button class='share-btn' open-type='share'>分享好友</button>
-          <button class='save-btn' bindtap='imgShow'>保存文件</button>
+          <block wx:if="{{is_share}}">
+            <button class='share-btn' open-type='share'>分享好友</button>
+            <button class='save-btn' bindtap='saveImg'>保存文件</button>
+          </block>
+          <block wx:if="{{!is_share}}">
+              <button class='share-btn' bindtap='home'>我也要评估</button>
+          </block>
        </view>
     </view>
 </view>

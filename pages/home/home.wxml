@@ -13,4 +13,11 @@
         </radio-group> 
         <button class='create-btn' bindtap='create'>开始评估</button>
     </view>
+    <view class='float-view'>
+      <view class="float-view-wrapper">
+        <image class='float-iamge' src='{{floatImg}}' mode='widthFix' bindtap='newApp'></image>
+        
+        <navigator class="nav-view" wx:if='{{is_nav && isUse}}' target="miniProgram" open-type="navigate" app-id="{{app_id}}" path="" extra-data="" version="release"></navigator>
+      </view>
+    </view>
 </view>

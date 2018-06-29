@@ -43,8 +43,8 @@
 .result-image {
   width: 561rpx;
   height: 960rpx;
-  background-color: #5f3919;
-  padding: 24rpx;
+  background-color: #f5f5f5;
+  border: #5f3919 solid 12px;
   border-radius: 10px;
 }
 
