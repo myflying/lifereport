@@ -1,0 +1,16 @@
+<!--pages/home/home.wxml-->
+<view class='content-view'>
+    <view class='bg-view'>
+      <image class='bg-top' src='../images/top_icon.png'></image>
+      <image class='bg-bottom' src='../images/bottom_icon.png'></image>
+    </view>
+    <view class='input-view'>
+        <text>人生成绩单</text>
+        <input class='input-name' bindinput='inputname' placeholder-class='input-pl' maxlength='4' type='text' placeholder='请输入姓名'></input>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <radio value="1" checked="true"/>男
+            <radio class='radio-right' value="2"/>女
+        </radio-group> 
+        <button class='create-btn' bindtap='create'>开始评估</button>
+    </view>
+</view>

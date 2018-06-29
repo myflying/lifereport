@@ -1,0 +1,19 @@
+<!--pages/home/home.wxml-->
+<view class='content-view'>
+    <view class='bg-view'>
+      <image class='bg-top' src='../images/top_icon.png'></image>
+    </view>
+    <view class='result-view'>
+       <image class='result-image' src='{{img_url}}' bindtap='imgShow' mode='widthFix'></image>
+       <view class='btn-view'>
+          <button class='share-btn' open-type='share'>分享好友</button>
+          <button class='save-btn' bindtap='imgShow'>保存文件</button>
+       </view>
+    </view>
+</view>
+
+<view class="show_tip" wx:if='{{is_show}}' data-statu="close" bindtap='showconfig'>
+    <view class='show-content'><image src='../images/touch_icon.png' class='touch-image'></image></view>
+    <view class='show-content'><image src='../images/hint_text.png' class='hint-text'></image></view>
+    <view class='show-content'><image src='../images/hint_config.png' class='hint-config'></image></view>
+</view>
